@@ -3,10 +3,15 @@ import pickle
 import numpy as np
 import os
 
-# Set up paths for model and scaler
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-scaler_path = r"C:\Users\auroj\Project4\app\models\scaler.pkl"
-model_path = r"C:\Users\auroj\Project4\app\models\model.pkl"
+
+
+# Use relative paths with "./" for Streamlit Cloud compatibility
+scaler_path = os.path.join("./Models", "scaler.pkl")
+model_path = os.path.join("./Models", "model.pkl")
+
+
+
+
 
 
 # Load the scaler and model
